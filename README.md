@@ -497,7 +497,12 @@ Handlers.add(
 ```
 
 
-将代码加入到`print_msg.lua`文件中，并在 `aos `运行` .load print_msg.lua`
+将代码加入到`print_msg.lua`文件中，并在 `aos `运行
+
+
+```lua
+.load print_msg.lua
+```
 
 
 存储 `AOCRED` 代币的ID变量
