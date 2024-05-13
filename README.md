@@ -523,6 +523,6 @@ Send({ Target = CRED, Action = "Balance"})
 
 
 ```lua
-aos> Send({ Target = CRED, Action = "Transfer", Recipient = "your_address_here", Quantity = "amount_here"})
+ Send({ Target = CRED, Action = "Transfer", Recipient = "your_address_here", Quantity = "amount_here"})
 ```
 
