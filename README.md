@@ -497,7 +497,7 @@ Handlers.add(
 ```
 
 
-将代码加入到`print_msg.lua`文件中，并在 `aos `运行
+将代码加入到`print_msg.lua`文件中，并在 `aos`运行
 
 
 ```lua
