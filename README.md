@@ -42,7 +42,7 @@ Send({ Target = "process ID", Data = "Hello World!" })
 例：`Send({ Target = "gdC_YymKAxnCbliqR5TpAeJ5SaKFknKxIV_4n56pmHY", Data = "Hello World!" })`
 
 
-![image](https://github.com/Arky0420/AO-Quests_1/blob/main/IMG/process%20ID.png)
+![image](https://github.com/Arky-io/AO_Quests1/blob/main/IMG/process%20ID.png)
 
 
 或者使用
@@ -129,7 +129,7 @@ Members = Members or {}
 
 `Ctrl+S`保存，`Ctrl+x`退出
 
-![image](https://github.com/Arky0420/AO-Quests_1/blob/main/IMG/chatroom.lua_1.png)
+![image](https://github.com/Arky-io/AO_Quests1/blob/main/IMG/chatroom.lua_1.png)
 
 
 ## 2.返回`窗口1`,加载`chatroom.lua`文件
@@ -175,7 +175,7 @@ nano chatroom.lua
 `Ctrl+S`保存，`Ctrl+x`退出
 
 
-![image](https://github.com/Arky0420/AO-Quests_1/blob/main/IMG/chatroom.lua_2.png)
+![image](https://github.com/Arky-io/AO_Quests1/blob/main/IMG/chatroom.lua_2.png)
 
 ## 4.返回`窗口1`,加载`chatroom.lua`文件
 
@@ -194,7 +194,7 @@ nano chatroom.lua
 反馈内容:
 
 
-![image](https://github.com/Arky0420/AO-Quests_1/blob/main/IMG/Handlers.list%E5%8F%8D%E9%A6%88.png)
+![image](https://github.com/Arky-io/AO_Quests1/blob/main/IMG/Handlers.list%E5%8F%8D%E9%A6%88.png)
 
 
 ## 5.注册聊天室
@@ -404,7 +404,7 @@ Handlers.add(
 `Ctrl+S`保存，`Ctrl+x`退出
 
 
-![image](https://github.com/Arky0420/AO-Quests_1/blob/main/IMG/chatroom.lua_4.png)
+![image](https://github.com/Arky0420/AO-Quests_1/blob/main/IMG/chatroom.lua_3.png)
 
 ## 2.返回`窗口1`
 加载`chatroom.lua`文件
