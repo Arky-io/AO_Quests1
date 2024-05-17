@@ -97,6 +97,8 @@ Send({ Target = Morpheus, Data = "Morpheus?" })
 ```
 
 例：查看第3条信息` Inbox[3].Data`
+
+
 反馈内容:`I am here. You are finally awake. Are you ready to see how far the rabbit hole goes?`
 
 向 Morpheus 发送一条消息。
@@ -108,7 +110,7 @@ Send({ Target = Morpheus, Data = "Code: rabbithole", Action = "Unlock" })
 反馈内容:`New Message wu_...nUU: Data = then let us test you`
 
 
-使用Inbox[#Inbox].Data查看全部内容
+使用`Inbox[#Inbox].Data`查看全部内容
 
 
 `then let us test your readiness. create a chatroom and send me an invite. we will continue to see if you are truly ready there.`
@@ -289,13 +291,13 @@ Send({ Target = Morpheus, Action = "Join" })
  Inbox[#Inbox].Data
 ```
 
-反馈内容:`Good. Very Good.  Now, let me introduce you to Trinity.  Here is her process ID: y948iNUUNImam82gwZxFBNyvI8HLHB3Ld_uYmj9S20g. Once you have saved her process ID as you did mine, invite her to the chatroom, as well.`
+反馈内容:`Good. Very Good.  Now, let me introduce you to Trinity.  Here is her process ID: VMLVDt1zYwckDJb7RKQXtm6bK1RdbJf_263oPChWwQw. Once you have saved her process ID as you did mine, invite her to the chatroom, as well.`
 
 ## 9.存储 Trinity 的ID变量
-上一步可看到Morpheus反馈Trinity的ID：`y948iNUUNImam82gwZxFBNyvI8HLHB3Ld_uYmj9S20g`
+上一步可看到Morpheus反馈Trinity的ID：`VMLVDt1zYwckDJb7RKQXtm6bK1RdbJf_263oPChWwQw`
 
 ```lua
- Trinity = "y948iNUUNImam82gwZxFBNyvI8HLHB3Ld_uYmj9S20g"
+ Trinity = "VMLVDt1zYwckDJb7RKQXtm6bK1RdbJf_263oPChWwQw"
 ```
  
 检查  Trinity的process ID变量
@@ -304,7 +306,7 @@ Send({ Target = Morpheus, Action = "Join" })
  Trinity
 ```
 
-反馈内容:`y948iNUUNImam82gwZxFBNyvI8HLHB3Ld_uYmj9S20g`
+反馈内容:`VMLVDt1zYwckDJb7RKQXtm6bK1RdbJf_263oPChWwQw`
 
 ## 10.邀请 Trinity加入聊天室
 
@@ -324,7 +326,7 @@ Send({ Target = Morpheus, Action = "Join" })
  Members
 ```
 
-反馈内容:`{ "#你的process ID", "wu_tAUDUveetQZpcN8UxHt51d9dyUkI4Z-MfQV8LnUU", "y948iNUUNImam82gwZxFBNyvI8HLHB3Ld_uYmj9S20g" }`
+反馈内容:`{ "#你的process ID", "wu_tAUDUveetQZpcN8UxHt51d9dyUkI4Z-MfQV8LnUU", "VMLVDt1zYwckDJb7RKQXtm6bK1RdbJf_263oPChWwQw" }`
 
 # 四、创建代币
 
@@ -361,6 +363,14 @@ Inbox[#Inbox].Data
 ```lua
 Send({ Target = ao.id, Action = "Transfer", Recipient = Trinity, Quantity = "1000"})
 ```
+
+反馈：`New Message From #你的process ID: Data = Token received. Inte`
+
+
+使用`Inbox[#Inbox].Data`查看全部内容
+
+
+`then let us test your readiness. create a chatroom and send me an invite. we will continue to see if you are truly ready there.`
 
 反馈：`Trinity: "Token received. Interesting. I wasn't sure you'd make it this far. I'm impressed, but we are not done yet. I want you to use this token to tokengate the chatroom. Do that, and then I will believe you could be the one."`
 
@@ -421,7 +431,7 @@ Handlers.add(
 Send({ Target = ao.id , Action = "Broadcast", Data = "Hello" })
 ```
 
-反馈：`  `
+反馈：`Broadcasting message from #你的process ID. Content: Hello`
 
 ## 4.打开一个新的服务器窗口,创建一个没有代币的AOS进程测试
 
